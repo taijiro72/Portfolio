@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .outer {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 20px;
+      background-color: cadetblue;
+    }
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: crimson;
+      position: relative;
+    }
+    .inner {
+      width: 100%;
+      height: 50%;
+    }
+    .inner1 {
+      background-color: rgb(117, 186, 241);
+    }
+    .inner2 {
+      background-color: darkkhaki;
+    }
+
+    .box1 .inner1 {
+      position: relative;  /* static: default*/ 
+      top: 30px;
+    }
+    .box1 .inner2 {
+      position: relative;
+      left: 100px;
+      bottom: 20px;
+    }
+    .box2 .inner1 { 
+      position: absolute; /* 부모중에 스테틱이 아닌것을 기준 relative으로 하여 움직임 */
+      top: 30px;
+      left: 100px;
+    }
+    .box2 .inner2 {
+      position: absolute;
+      top:30px;
+    }
+
+  
+
+
+
+
+
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="box box1">
+      <div class="inner inner1">inner1</div>
+      <div class="inner inner2">inner2</div>
+    </div>
+  </div>
+  <div class="outer">
+    <div class="box box2">
+      <div class="inner inner1">inner1</div>
+      <div class="inner inner2">inner2</div>
+    </div>
+  </div>
+</body>
+</html>
