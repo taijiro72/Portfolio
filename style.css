@@ -19,10 +19,10 @@
 
   /* font size */
   --font-large: 48px;
-  --font-medium: 28px;
+  --font-medium: 24px;
   --font-regular: 18px;
   --font-small: 16px;
-  --fonr-mircro: 14px;
+  --font-mircro: 14px;
 
   /* font weight */
   --weight-bold: 700;
@@ -31,6 +31,9 @@
 
   /* size */
   --size-border-radius: 4px;
+
+  /* Animation */
+  --animation-duration: 300ms;
 }
 
   /* universal tags */
@@ -152,4 +155,68 @@
   color: var(--color-dark-grey);
 }
 
+/* Section common */
+.section {
+  padding:50px;
+  text-align: center;
+  max-width: 1200px; /*내 브라우저에서는 자동 정렬되었음*/
+  margin: auto; /*내 브라우저에서는 자동 정렬되었음*/
+}
 
+.about__majors {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+  font-size: 70px;
+  color: var(--color-deeper-yellow);
+  line-height: 170px;
+  margin: auto;
+  border: 1px solid var(--color-deeper-yellow);
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+.major__icon:hover i {
+  color: var(--color-dark-pink);
+  transform: rotate(-10deg) scale(1.2);
+}
+
+.major__icon i {
+  transition: all var(--animation-duration) ease;
+}
+
+.marjor__title, .major__description {
+  color: var(--color-dark-grey);
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.job {
+  display: flex;
+  align-items: center;
+}
+
+.job__description {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.job__name, .job__period {
+  color: var(--color-light-grey);
+}
+
+.job__name {
+  font-size: var(--font-small);
+  font-weight: var(--weight-semi-bold);
+}
+
+.job__period {
+  font-size: var(--font-mircro);
+}
