@@ -332,8 +332,8 @@
 
 .project {
   position: relative;
-  width: 280px;
-  height: 131px;
+  width: 300px;
+  height: 140px;
   margin: 2px;
   justify-content: center;
   align-items: center;
@@ -378,4 +378,44 @@
   height: 2px;
   background-color: var(--color-dark-white);
   margin-top: 3px;
+}
+
+/* Testimo */
+#testimonials {
+  background-color: var(--color-light-white);
+}
+
+.testimonials {
+  margin: 40px;
+}
+
+.testimonial {
+  display: flex;
+  margin: 30px 0;
+}
+
+.testimonial__avatar {
+  width: 200px;
+  height: 130px;
+  border-radius: var(--size-border-radius);
+}
+
+.testimonial__avatar:nth-child(1) {
+  margin-right: 40px;
+}
+.testimonial__avatar:nth-child(2) {
+  margin-left: 40px;
+}
+
+.testimonial__speech-bubble {
+  padding: 18px;
+  background-color: var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+.testimonial__speech-bubble p {
+  color: var(--color-light-grey);
+
+}.testimonial__speech-bubble a {
+  color: var(--color-deeper-yellow);
 }
