@@ -293,7 +293,6 @@
   border-radius: var(--size-border-radius);
   font-size: var(--font-regular);
   color: var(--color-light-grey);
-  width: 200px;
   padding: 8px 54px;
   margin: 2px;
 }
