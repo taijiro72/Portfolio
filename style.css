@@ -130,7 +130,7 @@
 }
 
 .navbar__menu__item:hover {
-  background-color: var(--color-deeper-yellow);
+  background-color: #d8cf7f;
   border-radius: var(--size-border-radius);
 }
  
