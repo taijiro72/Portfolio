@@ -343,6 +343,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  opacity: 1;
+  transition: all var(--animation-duration) ease-out;
+}
+
+.work__projects.anim-out {
+opacity: 0.7;
+transform: scale(0.9) translateY(30px);
 }
 
 .project {
@@ -352,6 +359,10 @@
   margin: 2px;
   justify-content: center;
   align-items: center;
+}
+
+.project.invisible {
+  display: none;
 }
 
 .project__img {
